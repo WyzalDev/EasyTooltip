@@ -1,0 +1,15 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b296ab468cb14f538e481a5d9c4f7d7a, type: 3}
+  m_Name: DescriptionTooltipExample
+  m_EditorClassIdentifier: Assembly-CSharp::EasyTooltip.Example.DescriptionTooltipData
+  Description: Some Description that show when cursor is on object that handles tooltips.
