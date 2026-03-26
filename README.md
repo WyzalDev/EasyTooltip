@@ -27,4 +27,12 @@ For each tooltip type. You need to create DTO, View, Prefab and make mapping bet
 * Remove all raycastTarget flags from your tooltip prefab! Even TMP_Text has raycastTarget.
 * You didn't write full class name when deal with mapping.
 
+## MVVM Based
+Lib uses MVVM patter and for data-binding uses R3.  
 
+![Model](ReadmeContent/Model.PNG)  
+
+Like on Schema, we see MVVM components:
+* TooltipDataBase and it's inheritors - Model
+* TooltipViewModel - as ViewModel
+* TooltipManager and TooltipViewBase with it's inheritors - View
