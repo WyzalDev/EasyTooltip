@@ -28,7 +28,7 @@ For each tooltip type. You need to create DTO, View, Prefab and make mapping bet
 * You didn't write full class name when deal with mapping.
 
 ## MVVM Based
-Lib uses MVVM patter and for data-binding uses R3.  
+Lib uses MVVM pattern and for data-binding uses R3.  
 
 ![Model](ReadmeContent/Model.PNG)  
 
