@@ -7,6 +7,9 @@ For using, requires Zenject, R3 and R3.Unity
 
 Depends on which of 4 parts of screen cursor is in, tooltip changes pivot dynamicaly.  
 That prevents cases when tooltip window goes off-screen
+## Instalation
+Get [unity package](https://github.com/WyzalDev/EasyTooltip/releases/tag/v1.0.0) and install it to project.
+
 ## Configuration
 1. Create DTO for your tooltip that inherits from TooltipDataBase.
 2. Create View for your tooltip that inherits from TooltipViewBase.
