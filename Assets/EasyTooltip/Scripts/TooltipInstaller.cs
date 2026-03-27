@@ -1,4 +1,5 @@
-﻿using Zenject;
+﻿// Copyright (c) 2026 WyzalDev. All Rights Reserved.
+using Zenject;
 
 namespace EasyTooltip
 {

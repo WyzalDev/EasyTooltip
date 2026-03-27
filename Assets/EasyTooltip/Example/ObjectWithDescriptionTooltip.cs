@@ -1,4 +1,5 @@
-﻿using UnityEngine;
+﻿// Copyright (c) 2026 WyzalDev. All Rights Reserved.
+using UnityEngine;
 using UnityEngine.EventSystems;
 using Zenject;
 

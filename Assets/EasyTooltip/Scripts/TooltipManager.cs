@@ -1,10 +1,11 @@
-﻿using System;
+﻿// Copyright (c) 2026 WyzalDev. All Rights Reserved.
+using System;
 using System.Collections.Generic;
 using UnityEngine;
-using R3;
 using UnityEngine.InputSystem;
 using UnityEngine.Pool;
 using UnityEngine.UI;
+using R3;
 using Zenject;
 
 namespace EasyTooltip
@@ -16,17 +17,16 @@ namespace EasyTooltip
     /// </summary>
     public class TooltipManager : MonoBehaviour
     {
-        [Header("ManagerSettings")] [Tooltip("RectTransform that contains all tooltips view windows")] [SerializeField]
-        private RectTransform _tooltipContainer;
+        [Header("ManagerSettings")] [Tooltip("RectTransform that contains all tooltips view windows")]
+        [SerializeField] private RectTransform _tooltipContainer;
 
-        [Tooltip("Offset between tooltip window and cursor")] [SerializeField]
-        private float _cursorPixelsOffset;
+        [Tooltip("Offset between tooltip window and cursor")]
+        [SerializeField] private float _cursorPixelsOffset;
 
         [Header("Mappings")]
         [Tooltip(
             "Contains mappings between data and view class of each tooltipType.\n\r You need full class name for each data tooltip type")]
-        [SerializeField]
-        private List<TooltipPrefabMapping> _mappings;
+        [SerializeField] private List<TooltipPrefabMapping> _mappings;
 
         private TooltipViewModel _viewModel;
         private IInstantiator _instantiator;
@@ -80,7 +80,6 @@ namespace EasyTooltip
 
         private void OnTooltipChanged(TooltipDataBase data)
         {
-            Debug.Log("Tooltip Changed");
             if (_currentView != null && _currentTooltipDataType != null)
             {
                 HideTooltip();
@@ -141,15 +140,6 @@ namespace EasyTooltip
             var offsetY = Mathf.Approximately(pivotY, 1f) ? -_cursorPixelsOffset : _cursorPixelsOffset;
 
             rect.position = _mousePosition + new Vector2(offsetX, offsetY);
-        }
-
-        private void Update()
-        {
-            if (_currentView is null)
-                return;
-
-            _mousePosition = _mousePositionAction.ReadValue<Vector2>();
-            _currentView.transform.position = _mousePosition;
         }
     }
 

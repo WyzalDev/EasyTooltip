@@ -1,9 +1,12 @@
 # EasyTooltip
-Small lib for easy tooltip handling in unity.  
+Small lib for easy tooltip handling in unity
 ## !! IMPORTANT !!
-For using, requires Zenject and R3.
+For using, requires Zenject, R3 and R3.Unity
 ## How it looks
 ![Presentation](ReadmeContent/Presentation.gif)
+
+Depends on which of 4 parts of screen cursor is in, tooltip changes pivot dynamicaly.  
+That prevents cases when tooltip window goes off-screen
 ## Configuration
 1. Create DTO for your tooltip that inherits from TooltipDataBase.
 2. Create View for your tooltip that inherits from TooltipViewBase.
@@ -26,6 +29,7 @@ For each tooltip type. You need to create DTO, View, Prefab and make mapping bet
 ## Possible Mistakes
 * Remove all raycastTarget flags from your tooltip prefab! Even TMP_Text has raycastTarget.
 * You didn't write full class name when deal with mapping.
+* You didn't install Zenject or R3(with R3.Unity)
 
 ## MVVM Based
 Lib uses MVVM pattern and for data-binding uses R3.  

@@ -1,4 +1,5 @@
-﻿using UnityEngine;
+﻿// Copyright (c) 2026 WyzalDev. All Rights Reserved.
+using UnityEngine;
 
 namespace EasyTooltip.Example
 {
@@ -6,6 +7,6 @@ namespace EasyTooltip.Example
     public class DescriptionTooltipData : TooltipDataBase
     {
         [TextArea]
-        public string Description;
+        [SerializeField] public string Description;
     }
 }

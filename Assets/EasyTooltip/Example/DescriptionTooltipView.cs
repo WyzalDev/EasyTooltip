@@ -1,5 +1,6 @@
-﻿using TMPro;
+﻿// Copyright (c) 2026 WyzalDev. All Rights Reserved.
 using UnityEngine;
+using TMPro;
 
 namespace EasyTooltip.Example
 {
